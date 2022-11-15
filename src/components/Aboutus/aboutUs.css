@@ -1,0 +1,32 @@
+.about-us{
+    margin: 80px auto;
+}
+.about-us h2{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.about-us h2 span{
+    color: var(--secondary-color);
+    margin-left: 10px;
+}
+
+.box-card{
+    box-shadow: 0 0 1px #666;
+    border-radius: 10px;
+    height: 426px;
+}
+.about-image{
+    max-width: 100%;
+}
+.card-title-about{
+    width: fit-content;
+    margin:auto;
+    padding: 15px 0 0 ;
+}
+.card-info p{
+padding: 20px 20px;
+text-align: center ;
+color: var(--main-color);
+letter-spacing: 1px;
+}

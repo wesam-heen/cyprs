@@ -1,0 +1,10 @@
+.Paragraph{
+    width: 700px;
+    max-width:100%;
+    text-align: center;
+    margin: 40px auto;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    color: var(--main-color);
+    font-size: 18px;
+}

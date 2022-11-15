@@ -1,0 +1,28 @@
+.search {
+  position: relative;
+  max-width: 70%;
+}
+.search input {
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: 60%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  caret-color: var(--main-color);
+}
+.search input::placeholder {
+  letter-spacing: 2px;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.search .search-btn {
+  position: absolute;
+  background-color: var(--main-color);
+  width: 35px;
+  height: 35px;
+  padding: 7.5px;
+  border-radius: 50%;
+  right: 42%;
+  top: 12%;
+}

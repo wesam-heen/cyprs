@@ -1,0 +1,96 @@
+.main {
+  position: relative;
+  background-image: url("../../assests/images/landing.jpg");
+  background-size: 100vw 100vh;
+  background-position: bottom;
+  height: calc(100vh - 140px);
+  overflow: hidden;
+}
+.main:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to right,
+    #00000070,
+    #00000099 25%,
+    #ffffff50 75%
+  );
+}
+.main .row {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main h2 {
+  font-size: 60px;
+  color: #fff;
+}
+.main h2 span {
+  color: var(--secondary-color);
+}
+.main p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 70%;
+}
+.main button {
+  margin: 30px 0;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  width: 40%;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .main {
+    background-size: cover !important;
+    height: 100vh;
+  }
+  .main:before {
+    background-image: linear-gradient(
+      to bottom,
+      #1a2d40,
+      #1a2d4099 50%,
+      #ffffff50 75%
+    );
+  }
+  .main h2 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .main p {
+    text-align: center;
+    max-width: 100% !important;
+  }
+  .main .search {
+    max-width: 100% !important;
+    position: relative;
+  }
+  .main .search input {
+    position: absolute;
+    width: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .main .search .search-btn {
+    right: 6%;
+    top: 5px;
+  }
+  .main button {
+    position: absolute;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -70%;
+    font-size: 18px;
+  }
+ 
+}

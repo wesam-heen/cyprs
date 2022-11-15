@@ -1,0 +1,7 @@
+.frame{
+    width: fit-content;
+    margin: auto;
+}
+.frame svg{
+    max-width: 100%;
+}

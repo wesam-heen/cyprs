@@ -1,0 +1,45 @@
+.main-programs {
+  position: relative;
+  background-image: url("../../../../assests/images/programs.png");
+  background-size: cover;
+  background-position: top;
+  height: 75vh;
+  color: #fff;
+}
+.main-programs h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+.program-sections {
+  position: absolute;
+  background-color: var(--secondary-color);
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+.program-sections .Link {
+  display: inline-block;
+  margin: 10px 0px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+}
+.program-sections .Link:not(:last-child) {
+  border-right: 2px solid #fff;
+}
+.program-sections .Link.active {
+  color: var(--main-color) !important;
+}
+@media (max-width: 767px) {
+  .program-sections .Link {
+    font-size: 12px;
+    margin: 0;
+  }
+}

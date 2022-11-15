@@ -1,0 +1,17 @@
+.square{
+    background-color: var(--secondary-color);
+    color: #fff !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    width:fit-content; 
+    font-size: 30px;
+    margin: auto;
+}
+@media(max-width:767px){
+    .square{
+        font-size: 15px;
+    }
+}

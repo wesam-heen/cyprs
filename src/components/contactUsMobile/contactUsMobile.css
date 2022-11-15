@@ -1,0 +1,42 @@
+@media(max-width:767px){
+    .contact-us-mobile{
+         display: block;
+         
+        }
+        .contact-us-mobile{
+            background-color: var(--main-color);
+            color: #fff;
+            text-align: center;
+            padding: 30px 40px 0px;
+        }
+        .contact-us-mobile h2{
+            color: var(--secondary-color);
+            padding: 30px 10px;
+            letter-spacing: 2px;
+            font-size: 30px;
+        }
+        .contact-us-mobile .info-form-mobile div{
+            position: relative;
+            text-align: left;
+            padding:30px 0px 0px 40px;
+            font-size: 13px;
+        }
+        .contact-us-mobile .info-form-mobile div::before{
+            position: absolute;
+            content: '';
+            width: 25px;
+            height: 25px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            left:0;
+        
+        }
+        .contact-us-mobile .info-form-mobile div:not(:last-child):after{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            left:3%;
+            background-color: var(--secondary-color);
+        }
+}

@@ -1,0 +1,27 @@
+.social-icons-main {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  .social-icons-main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  @media (max-width:767px){
+    .social-icons-main{
+        display: none;
+    }
+  }

@@ -1,0 +1,119 @@
+.slide {
+  margin: 40px auto;
+}
+.slide-mobile{
+  display: none;
+}
+.box {
+  padding: 20px;
+  padding-bottom: 40px;
+  box-shadow: 0 0 2px #888;
+  border-radius: 12px;
+  
+}
+.slide-photo {
+  width: 350px;
+  height: 350px;
+  margin-top: 60px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+  border-radius: 14px;
+  box-shadow: 3px 2px 5px var(--secondary-color);
+}
+.bullts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bullts span {
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  display: block;
+  margin-top: 0;
+  margin-left: 2px;
+}
+.bullts span.active {
+  background-color: var(--main-color);
+}
+.info-slide {
+  padding-top: 80px;
+}
+.info-slide h2 {
+  color: var(--main-color);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.info-slide p {
+  color: var(--main-color);
+  line-height: 2;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  font-size: 20px;
+  width: 300px;
+}
+.info-slide button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 15px;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width:767px){
+  .slide{
+    display: none;
+  }
+  .slide-mobile{
+    display: block;
+    display: flex;
+    padding-top: 100px;
+    position: relative;
+  }
+  .mobile-slider{
+    position: relative;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 10px;
+    margin: 0 5px;
+    max-width: 80%;
+    padding: 80px 20px 5px;
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .mobile-slider img{
+    border-radius: 25px;
+    position: absolute;
+    max-width: 50%;
+    box-shadow: 5px 5px 5px var(--secondary-color);
+    top:-40%;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .mobile-slider button{
+    color:#fff;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    padding: 5px;
+    border: none;
+    margin: none;
+  }
+  .slide-mobile svg{
+    position: absolute;
+    max-width: 28px;
+    margin: 0 5px;
+    top:60%;
+    transform: translateY(-60%);
+  }
+  .slide-mobile svg:nth-child(3){
+    right: -5px;
+  }
+}

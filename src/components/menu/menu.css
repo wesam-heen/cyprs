@@ -1,0 +1,33 @@
+.menu{
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    width: 600px;
+    left:50%;
+    top:110%;
+    border-radius: 5px;
+    transform: translate(-50%,5%);
+    box-shadow: 0 0 3px #777;
+    z-index: 99;
+}
+.menu.active-drop{
+    display: block;
+}
+.menu p{
+    font-weight: normal;
+    font-size: 12px;
+    padding-top: 7px;
+}
+.menu .main-heading{
+    color: #fff;
+    background-color: var(--secondary-color);
+    padding: 7.5px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+}
+p a{
+    text-decoration: none;
+    color: var(--main-color);
+}

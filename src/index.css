@@ -1,0 +1,32 @@
+*{
+  font-family:"Sitka Heading" !important;
+  padding: 0 ;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:"Sitka Heading" !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+  background-color: #f2f2f2 !important;
+
+}
+:root{
+  --main-color:#1a2d40;
+  --secondary-color:#c6a270 ;
+  --font-color: #405363;
+}
+ul{
+  list-style: none;
+  margin: 0 !important;
+  padding: 0 !important;
+
+}
+a{
+  text-decoration: none;
+}
