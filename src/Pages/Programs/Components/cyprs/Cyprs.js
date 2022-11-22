@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Cyprs.css'
 import MobileMenu from "../../../../components/mobileMenu/MobileMenu";
 import { Outlet ,NavLink} from "react-router-dom";
 
 const Cyprs = () => {
+  useEffect(()=>{
+    document.title='Avion Citizenship | Cyprus'
+  },[])
   return (
     <>
    <>
-   <div className="main-programs">
+   <div className="main-programs Cyprus">
    <MobileMenu />
    <h2>
      Residency By Investment
      <br />
-     In Cyprs
+     In Cyprus
    </h2>
    <div className="program-sections">
    <nav>
@@ -23,7 +26,7 @@ const Cyprs = () => {
  Advantages
  </NavLink>
  <NavLink to="investment" className="Link" >
-   investment plan
+   Investment plan
  </NavLink>
  <NavLink to="Procedures" className="Link" >
    Procedures and time

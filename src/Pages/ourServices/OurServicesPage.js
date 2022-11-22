@@ -1,12 +1,23 @@
-import React from "react";
 import "./ourServicesPage.css";
 import Square from '../../components/squareframe/Square'
 import Card from '../../components/Card/Card'
 import { Container } from "react-bootstrap";
 import MobileMenu from "../../components/mobileMenu/MobileMenu";
-const ourServices = () => {
+import { useEffect, useLayoutEffect } from "react";
+import { useLocation } from "react-router-dom";
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
+const OurServices = () => {
+  useEffect(()=>{
+    document.title='Avion Citizenship | Services'
+  },[])
   return (
-      <>
+      <Wrapper>
       <MobileMenu/>
       <div className="our-services-page mt-md-5 mb-md-5 pb-4">
       <Container>
@@ -275,8 +286,8 @@ const ourServices = () => {
       </div> 
       </Container>
       </div>
-      </>
+      </Wrapper>
     );
 };
 
-export default ourServices;
+export default OurServices;

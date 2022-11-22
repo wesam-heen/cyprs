@@ -26,3 +26,26 @@
   right: 42%;
   top: 12%;
 }
+.view-programs-when-search{
+  display: none;
+  padding: 15px;
+  border-radius: 10px;
+  right:20%;
+  top:-10%;
+  transform: translateY(-50%);
+  position: absolute;
+  background-color: #fff;
+  height:fit-content;
+  z-index: 5;
+}
+.view-programs-when-search li a{
+  display: block;
+  position: relative;
+  color: var(--main-color) !important;
+  text-decoration: none;
+  text-align: center;
+  transition: var(--main-transition);
+}
+.view-programs-when-search li a:hover{
+  color: var(--secondary-color) !important;
+}

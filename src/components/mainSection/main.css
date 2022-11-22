@@ -28,6 +28,7 @@
 .main h2 {
   font-size: 60px;
   color: #fff;
+  padding-top: 30px;
 }
 .main h2 span {
   color: var(--secondary-color);
@@ -92,5 +93,18 @@
     bottom: -70%;
     font-size: 18px;
   }
- 
+}
+@media(max-width:1199px){
+  .main {
+    background-size: cover !important;
+    height: 100vh;
+  }
+  .main:before {
+    background-image: linear-gradient(
+      to bottom,
+      #1a2d40,
+      #1a2d4099 50%,
+      #ffffff50 75%
+    );
+  }
 }

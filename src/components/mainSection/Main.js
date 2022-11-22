@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import MobileMenu from "../mobileMenu/MobileMenu";
 import SearchInput from "../searchinput/SearchInput";
@@ -7,6 +8,9 @@ import "./main.css";
 
 
 const Main = () => {
+  useEffect(()=>{
+    document.title='Avion Citizenship'
+  },[])
   return (
     <>
       <div className="main ">
@@ -24,7 +28,7 @@ const Main = () => {
                   Our programs offer you a chance to obtain a second passport
                   that gives you freedom of movement.
                 </p>
-                <SearchInput />
+                <SearchInput className='search'/>
               </div>
               <button>Your Vision, Our Method</button>
             </div>

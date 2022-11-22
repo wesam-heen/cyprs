@@ -39,3 +39,9 @@ p a{
     margin-right: 5px;
     border-radius: 5px;
 }
+@media(max-width:1199px){
+    .menu{
+        left:200%;
+        top:80%;
+    }
+}

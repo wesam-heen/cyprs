@@ -67,7 +67,14 @@ display: none;
   border-radius: 25px;
   padding: 5px 35px;
 }
-@media (max-width: 767px) {
+.info-form-computer a{
+  text-decoration: none;
+  color:#fff;
+}
+.info-form-computer a:hover{
+  color:var(--secondary-color)
+}
+@media (max-width: 1199px) {
   .box2-contact-us input {
     width: 100%;
   }
@@ -95,3 +102,28 @@ display: none;
     display: block;
     }
 }
+.thank-you{
+  color: var(--main-color);
+  height: 75vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.thank-you h2{
+  color: var(--secondary-color);
+  font-size: 40px;
+}
+.thank-you  a{
+  background-color: var(--main-color);
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 25px;
+  padding:10px;
+  transition: var(--main-transition);
+} 
+.thank-you a:hover{
+  opacity: 0.8;
+}
+

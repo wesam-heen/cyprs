@@ -10,17 +10,28 @@ const ContactUsMobile = () => {
    
     <div className="info-form-mobile">
     <div>
-      <IoLocationOutline className='fs-2'/> <span>Office 2209, The Burlington Tower, Dubai, UAE</span>
+      <a href="https://www.google.com/maps/place/The+Burlington+Tower/@25.1850035,55.2645222,17z/data=!3m1!4b1!4m5!3m4!1s0x3e5f697129e73c31:0x689d4a578720d6aa!8m2!3d25.1850035!4d55.2645222">
+        <IoLocationOutline className="fs-2 me-1" />{" "}
+        <span>Office 2209, The Burlington Tower, Dubai, UAE</span>
+      </a>
     </div>
     <div>
-      <HiOutlineMail className='fs-2'/> <span>info@avioncitizenship.com</span>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@avioncitizenship.com">
+        <HiOutlineMail className="fs-2 me-1" />
+        <span>info@avioncitizenship.com</span>
+      </a>
     </div>
     <div>
-     <IoCallOutline className='fs-2'/>
-     <span>+97143289890</span>
+      <a href="tel:+97143289890">
+        <IoCallOutline className="fs-2 me-1" />{" "}
+        <span>+97143289890</span>
+      </a>
     </div>
     <div>
-      <IoLogoWhatsapp className='fs-2'/> <span>+971502678688</span>
+      <a href="https://wa.me/00971502678688?text=I'm%20interested%20to%20communicate%20with%20the%20work%20team">
+        <IoLogoWhatsapp className="fs-2 me-1" />{" "}
+        <span>+971502678688</span>
+      </a>
     </div>
    </div>
    <div className="social-icons-footer">

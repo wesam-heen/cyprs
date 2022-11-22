@@ -22,8 +22,8 @@ const AboutUs = () => {
         />
         <Frame text="Your Vision, Our Method" />
         <div className="row m-auto mt-4">
-          <div className="col-md-3"></div>
-          <div className="col-md-3 mt-3">
+          <div className="col-xl-3"></div>
+          <div className="col-xl-3 col-md-6 mt-3">
             <div className="box-card">
               <img src={about1} alt="image1" className="about-image" />
               <div className="card-title-about">
@@ -71,7 +71,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mt-3">
+          <div className="col-xl-3 col-md-6 mt-3">
             <div className="box-card">
               <img src={about2} alt="image1" className="about-image" />
               <div className="card-title-about">
@@ -118,7 +118,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-3"></div>
+          <div className="col-xl-3"></div>
         </div>
       </Container>
     </div>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import "./Slide.css";
-import slide from "../../assests/images/slide.png";
 import Antigua from "../../assests/images/AntiguaSlide.png";
 import Dominica from "../../assests/images/DominicaSlide.png";
 import Greece from "../../assests/images/GreeceSlide.png";
@@ -12,7 +11,7 @@ import Vanuatu from "../../assests/images/VanuatuSlide.png";
 import cyprus from "../../assests/images/cypursSlide.png";
 import { MdKeyboardArrowLeft,MdKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-
+import country from '../CountryData'
 
 let imageSlide = [
   Dominica,
@@ -34,16 +33,7 @@ let textSlide=[
   'Greece is located in the southernmost part of the Balkans. Its topography combines the high mountains in the interior of the country and more than 1,400 islands.',
   'Cyprus is ideally located in the Eastern Mediterranean and is renowned for its rich heritage and vibrant culture. Many leading companies operate in its attractive and fast-growing capital.'
 ]
-let country=[
-  'Commonwealth of Dominica',
-  'Saint Christopher and Nevis',
-  'Antigua and Barbuda',
-  'Saint Lucia',
-  'Grenada',
-  'Vanuatu',
-  'Greece',
-  'Cyprus'
-]
+
 let LinksCountry=[
   '/programs/Dominica/about',
   '/programs/Nevis/about',

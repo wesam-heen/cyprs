@@ -3,7 +3,7 @@ import Home from "./Pages/Home/Home";
 import Nav from "./components/Nav/Nav";
 import Navagation from "./components/Navagation/Navagation";
 import OurServicesPage from "./Pages/ourServices/OurServicesPage";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Cyprs from './Pages/Programs/Components/cyprs/Cyprs'
 import CyprsBenifites from './Pages/Programs/Components//cyprs/cyprsbenifites/CyprsBenifites'
@@ -46,13 +46,23 @@ import GreeceAbout from "./Pages/Programs/Components/Greece/GreeceAbout/GreeceAb
 import GreeceBenifites from "./Pages/Programs/Components/Greece/GreeceBenifites/GreeceBenifites";
 import GreeceInvestment from "./Pages/Programs/Components/Greece/GreeceInvestment/GreeceInvestment";
 import GreeceProcedures from "./Pages/Programs/Components/Greece/GreeceProcedures/GreeceProcedures";
+import ThankYou from "./components/Contactus/ThankYou";
+
+
+
 const App = () => {
+
   return (
     <div className="App">
       <Nav />
       <Navagation />
-      <Routes>
+      <Routes onUpdate={() =>   window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      })}>
         <Route path="/" element={<Home/>}/>
+        <Route path='/thankyou' element={<ThankYou/>}/>
         <Route path="/ourservices" element={<OurServicesPage/>}/>
         <Route path='/programs/cyprs' element={<Cyprs/>}>
         <Route path='about' element={<CyprsAbout/>}/>
