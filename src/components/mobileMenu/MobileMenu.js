@@ -4,15 +4,22 @@ import { Container } from "react-bootstrap";
 import logo1 from "../../assests/images/logo1.png";
 import logo2 from "../../assests/images/logo2.png";
 import { BsSearch } from "react-icons/bs";
-import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi";
 
-const toggle = (e) => {
-  document.querySelector(".mobile-menu").classList.toggle("active");
+import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
+
+
+const toggle = () => {
+  const mobileMenu=document.querySelector(".mobile-menu");
+  mobileMenu.classList.toggle("active");
 };
-const togglePrograms = (e) => {
-  document.querySelector(".mobile-menu").classList.toggle("active");
-  document.querySelector(".program-menu").classList.toggle("active");
+const togglePrograms = () => {
+  const mobileMenu=document.querySelector(".mobile-menu");
+  const programMenu= document.querySelector(".program-menu");
+  mobileMenu.classList.toggle("active");
+  programMenu.classList.toggle("active");
 };
 
 const MobileMenu = () => {
@@ -25,21 +32,20 @@ const MobileMenu = () => {
         <div className="toggle-mobile" onClick={toggle}>
           <GiHamburgerMenu className="fs-2" />
           <ul className="mobile-menu ">
-            <li>Home</li>
-            <li>Services</li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/ourservices'>Services</Link></li>
             <li style={{ position: "relative" }} onClick={togglePrograms}>
               Programs
               <ul className="program-menu">
-                <li>Antigua & Barbuda</li>
-                <li>Cyprus</li>
-                <li>Dominica </li>
-                <li>Greece</li>
-                <li>Saint kitts</li>
-                <li>Saint lucia </li>
+                <li><Link to='/programs/Antigua/about'>Antigua & Barbuda</Link></li>
+                <li><Link to='/programs/cyprs/about'>Cyprus</Link></li>
+                <li><Link to='/programs/Greece/about'>Greece</Link></li>
+                <li><Link to='/programs/Nevis/about'>Saint kitts</Link></li>
+                <li><Link to='/programs/Saint/about'>Saint lucia</Link> </li>
               </ul>
             </li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <li><HashLink to='/#AboutUs'>AboutUs</HashLink></li>
+            <li><HashLink to='/#ContactUs'>Contact Us</HashLink></li>
           </ul>
         </div>
       </Container>

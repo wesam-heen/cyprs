@@ -1,9 +1,9 @@
-nav{
+.main-nav-bar nav{
     padding: 0 !important;
     margin: 0 !important;
 }
 @media (max-width:767px){
-    nav{
+.main-nav-bar  nav{
         background-color: transparent !important;
         display:none !important ;
     }

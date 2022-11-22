@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ourservices.css";
-import { RiArrowDropLeftLine } from "react-icons/ri";
-import { RiArrowDropRightLine } from "react-icons/ri";
 import Square from "../squareframe/Square";
 import { Container } from "react-bootstrap";
 import Card from "../Card/Card";
-import MobileMenu from "../mobileMenu/MobileMenu";
+import { Link } from "react-router-dom";
+
+const lineLink=()=>{
+  const links=document.querySelectorAll('.nav-link');
+  links.forEach(link=>link.classList.remove('active-class'))
+  document.querySelector('.Services').classList.add('active-class')
+}
 const OurServices = () => {
   return (
     <Container>
@@ -37,7 +41,7 @@ const OurServices = () => {
               title="Citizenship By Investment"
               text="Invest In Your Future! Our Programs 
 Offer You A Chance To Obtain
- A Second Passport." show={true}
+ A Second Passport." show={true} function={lineLink}
             />
           </div>
           <div className="col-md-4 mt-2">
@@ -60,7 +64,7 @@ Offer You A Chance To Obtain
               title="Residency By Investment"
               text="The Residency By Investment Offers
 Our Client The Easiest Option Of
-Granting The Residency." show={true}
+Granting The Residency." show={true} function={lineLink}
             />
           </div>
           <div className="col-md-4 mt-2">
@@ -130,7 +134,7 @@ Granting The Residency." show={true}
               title="Passport Renewal"
               text="Our Company Are Also Here To Assist
 Our Clients To Renew Their Passport 
-Easily And Organized." show={true}
+Easily And Organized." show={true} function={lineLink}
             />
           </div>
         </div>
@@ -236,7 +240,7 @@ Easily And Organized." show={true}
             </g>
           </svg>
           <button class="btn-view">
-            <span>View All</span>
+            <Link to='/ourservices' onClick={lineLink}>View All</Link>
           </button>
           <svg
             xmlns="http://www.w3.org/2000/svg"

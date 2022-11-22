@@ -1,10 +1,18 @@
 .main-programs {
   position: relative;
-  background-image: url("../../../../assests/images/programs.png");
   background-size: cover;
-  background-position: top;
-  height: 75vh;
+  background-position: center  ;
+  height: 80vh;
   color: #fff;
+  background-position: bottom;
+}
+.main-programs::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(1px);
+  background-color: #00000075;
 }
 .main-programs h2 {
   position: absolute;
@@ -25,7 +33,7 @@
 .program-sections .Link {
   display: inline-block;
   margin: 10px 0px;
-  padding: 10px;
+  padding: 10px 5px;
   text-align: center;
   cursor: pointer;
   color: #fff;
@@ -34,7 +42,7 @@
 .program-sections .Link:not(:last-child) {
   border-right: 2px solid #fff;
 }
-.program-sections .Link.active {
+.program-sections a.active {
   color: var(--main-color) !important;
 }
 @media (max-width: 767px) {
@@ -42,4 +50,11 @@
     font-size: 12px;
     margin: 0;
   }
+  .main-programs h2 {
+    font-size: 28px;
+    width: 100%;
+  }
+}
+.Cyprus{
+  background-image: url('../../../../assests/images/cyprusProgram.png');
 }

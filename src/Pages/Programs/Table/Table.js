@@ -1,7 +1,7 @@
 import React from "react";
 import "./Table.css";
-import Frame from '../../../../components/frame/Frame'
-const Table = () => {
+import Frame from '../../../components/frame/Frame'
+const Table = (props) => {
   return (
   <div className='container'>
   <div className="table">
@@ -19,12 +19,12 @@ const Table = () => {
     </thead>
     <tbody>
       <tr>
-        <td>Nicosia</td>
-        <td>Greek</td>
-        <td>9251 Square Km</td>
-        <td>Constitutional Republic</td>
-        <td>1.18 Million</td>
-        <td>Euro</td>
+        <td>{props.table[0]}</td>
+        <td>{props.table[1]}</td>
+        <td>{props.table[2]}</td>
+        <td>{props.table[3]}</td>
+        <td>{props.table[4]}</td>
+        <td>{props.table[5]}</td>
       </tr>
     </tbody>
   </table>

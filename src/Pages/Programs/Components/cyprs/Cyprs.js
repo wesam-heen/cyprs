@@ -1,48 +1,41 @@
-import React from 'react'
-import Frame from '../../../../components/frame/Frame'
-import Paragraph from '../../../../components/Paragraph/Paragraph'
-import { Link } from "react-router-dom";
-import MobileMenu from "../../../../components/mobileMenu/MobileMenu";
-import Table from '../Table/Table'
+import React, { useEffect } from 'react'
 import './Cyprs.css'
-const spans = document.querySelectorAll(".program-sections span");
-spans.forEach((span) => {
-  span.addEventListener("click", () => {
-    spans.forEach((span) => span.classList.remove("active"));
-    span.classList.toggle("active");
-  });
-});
+import MobileMenu from "../../../../components/mobileMenu/MobileMenu";
+import { Outlet ,NavLink} from "react-router-dom";
+
 const Cyprs = () => {
+  useEffect(()=>{
+    document.title='Avion Citizenship | Cyprus'
+  },[])
   return (
     <>
-    <div className="main-programs">
-    <MobileMenu />
-    <h2>
-      Residency By Investment
-      <br />
-      In Cyprus
-    </h2>
-    <div className="program-sections">
-      <Link to="/programs/cyprs" className="Link active">
-        About the country
-      </Link>
-      <Link to="/programs/benefits" className="Link">
-        benefits
-      </Link>
-      <Link to="/programs/investment" className="Link">
-        investment plan
-      </Link>
-      <Link to="/programs/Procedures " className="Link">
-        Procedures and time
-      </Link>
-    </div>
-  </div>
-    <Frame text='&emsp; &emsp; About Cyprus'/>
-    <Paragraph text='Cyprus is ideally located in the Eastern Mediterranean and is renowned for its rich 
-    heritage and vibrant culture. Many leading companies operate in its attractive
-     and fast-growing capital, Nicosia, and gives Cyprus the option to obtain 
-    permanent residency quickly within a period of two months.'/>
-    <Table/>
+   <>
+   <div className="main-programs Cyprus">
+   <MobileMenu />
+   <h2>
+     Residency By Investment
+     <br />
+     In Cyprus
+   </h2>
+   <div className="program-sections">
+   <nav>
+   <NavLink to="about" className="Link ">
+   About the country
+ </NavLink>
+ <NavLink to="benefits" className="Link" >
+ Advantages
+ </NavLink>
+ <NavLink to="investment" className="Link" >
+   Investment plan
+ </NavLink>
+ <NavLink to="Procedures" className="Link" >
+   Procedures and time
+ </NavLink>
+   </nav>
+   </div>
+ </div>
+ <Outlet/>
+   </>
     </>
   )
 }
