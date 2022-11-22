@@ -1,0 +1,11 @@
+.benefits .row{
+    width: 80%;
+}
+.benefits .card{
+    margin: 0 30px;
+}
+@media(max-width:767px){
+    .benefits .row{
+        width: 100%;
+    }
+}

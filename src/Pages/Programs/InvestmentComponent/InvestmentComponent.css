@@ -1,0 +1,87 @@
+.InvestmentComponent {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 50px 75px 120px;
+  border-radius: 10px;
+}
+.InvestmentComponent h2 {
+  color: var(--secondary-color);
+  text-align: center;
+}
+.InvestmentComponent span {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+  width: 500px;
+  max-width: 100%;
+}
+.InvestmentComponent p {
+  position: relative;
+  font-size: 18px;
+  width: 400px;
+  margin: 15px auto;
+  left:5%;
+  padding: 30px;
+  height: 100px;
+  letter-spacing: 2px;
+  text-align: left !important;
+}
+.InvestmentComponent p::before {
+  content: "";
+  position: absolute;
+  background-color: var(--secondary-color);
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  left: -8% ;
+  z-index: 2;
+}
+.InvestmentComponent p::after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  border: 1px solid var(--secondary-color);
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  left: -9%;
+  top: 26%;
+}
+.left-section {
+  position: relative;
+}
+.left-section::before {
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 2px;
+  background-color: #fff;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 767px) {
+  .InvestmentComponent {
+    padding: 30px;
+    padding-bottom: 50px;
+  }
+  .left-section::before {
+    display: none;
+  }
+  .InvestmentComponent p {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+    padding: 25px;
+  }
+  .InvestmentComponent p::before {
+    left: -6% !important;
+  }
+  .InvestmentComponent p::after {
+    left: -7% !important;
+    top:21%;
+    border-width: 3px;
+  }
+}

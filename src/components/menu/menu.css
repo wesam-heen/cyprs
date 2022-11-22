@@ -28,6 +28,14 @@
     text-align: center;
 }
 p a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--main-color) !important;
+}
+.flag-image{
+    width: 25px;
+    height: 15px;
+    margin-right: 5px;
+    border-radius: 5px;
 }

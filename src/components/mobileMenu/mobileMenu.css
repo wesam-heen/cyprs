@@ -1,20 +1,16 @@
 .nav-bar-mobile{
   display: none;
 }
+.nav-bar-mobile a{
+  color: var(--secondary-color);
+  text-decoration: none;
+}
 
 @media (max-width: 767px) {
   .nav-bar-mobile {
     display: block;
     padding-top: 10px;
   }
-  /* .arrow-mobile{
-    position: absolute !important;
-    font-size: 20px !important;
-    left:-40% ;
-    font-size: 24px !important;
-    transform: translateY(-200%);
-    color: var(--main-color) !important;
-  } */
   .nav-bar-mobile .container {
     position: relative;
     display: flex;

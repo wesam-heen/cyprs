@@ -6,6 +6,7 @@ import Square from "../squareframe/Square";
 import { Container } from "react-bootstrap";
 import Card from "../Card/Card";
 import MobileMenu from "../mobileMenu/MobileMenu";
+import { Link } from "react-router-dom";
 const OurServices = () => {
   return (
     <Container>
@@ -236,7 +237,7 @@ Easily And Organized." show={true}
             </g>
           </svg>
           <button class="btn-view">
-            <span>View All</span>
+            <Link to='/ourservices'>View All</Link>
           </button>
           <svg
             xmlns="http://www.w3.org/2000/svg"

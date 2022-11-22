@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { FaFacebookF ,FaInstagram,FaTiktok,FaLinkedinIn} from "react-icons/fa";
 import "./Footer.css";
 import SearchInput from "../searchinput/SearchInput";
-import SocialIcons from "../socialIcons/SocialIcons";
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -12,38 +12,38 @@ const Footer = () => {
         <div className="row">
           <div className="col-md-1"></div>
           <div className="col-md-1 pe-2">
-            <p style={{ color: "var(--secondary-color)",fontSize:'20px',letterSpacing:'2px'}}>
+            <p style={{ color: "var(--secondary-color)",fontSize:'19px',letterSpacing:'2px',fontWeight:'bold'}}>
               Programs
             </p>
           </div>
           <div className="col-md-2" style={{paddingLeft:'10px'}}>
             <ul>
-              <li>Commonwealth of Dominica</li>
-              <li>Saint Christopher and Nevis </li>
-              <li>Antigua and Barbuda</li>
-              <li>Saint Lucia</li>
-              <li>Grenada</li>
-              <li>Vanuatu</li>
+              <li><Link to='/programs/Dominica/about'>Commonwealth of Dominica</Link></li>
+              <li><Link to='/programs/Nevis/about'>Saint Christopher and Nevis </Link></li>
+              <li><Link to='/programs/Antigua/about'>Antigua and Barbuda</Link></li>
+              <li><Link to='/programs/Saint/about'>Saint Lucia</Link></li>
+              <li><Link to='/programs/Grenada/about'>Grenada</Link></li>
+              <li><Link to='/programs/Vanuatu/about'>Vanuatu</Link></li>
             </ul>
           </div>
           <div className="col-md-1">
             <ul>
-              <li>Portugal</li>
-              <li>Cyprus</li>
+              <li><Link to='/programs/Greece/about'>Greece</Link></li>
+              <li><Link to='/programs/cyprs/about'>Cyprus</Link></li>
             </ul>
           </div>
           <div className="col-md-1 ps-2">
-            <p style={{ color: "var(--secondary-color)",fontSize:'20px',letterSpacing:'2px'}} className="">
+            <p style={{ color: "var(--secondary-color)",fontSize:'19px',letterSpacing:'2px',fontWeight:'bold'}} className="">
               Categories
             </p>
           </div>
           <div className="col-md-2" style={{paddingLeft:'35px'}}>
             <ul className="important-links">
-              <li>Home</li>
-              <li>Services</li>
-              <li>Programs</li>
-              <li>Contact Us</li>
-              <li>About Us</li>
+              <li><Link to='/'>Home</Link></li>
+              <li><Link to='/ourservices'>Services</Link></li>
+              <li><Link to='/programs/cyprs/about'>Programs</Link></li>
+              <li><Link to='/'>Contact Us</Link></li>
+              <li><Link to='/'>About Us</Link></li>
             </ul>
           </div>
           <div className="col-md-4 pt-5">
@@ -52,10 +52,10 @@ const Footer = () => {
             </p>
             <SearchInput />
             <div className="social-icons-footer">
-            <a href='/#' className="social-icon facebook"><FaFacebookF/></a>
-            <a href='/#' className="social-icon instagram "><FaInstagram/></a>
-            <a href='/#' className="social-icon tiktok "><FaTiktok/></a>
-            <a href='/#' className="social-icon linkedin "><FaLinkedinIn/></a>
+            <a href='https://www.facebook.com/avioncitizenship1/' className="social-icon facebook"><FaFacebookF/></a>
+            <a href='https://www.instagram.com/avioncitizenship1/' className="social-icon instagram "><FaInstagram/></a>
+            <a href='https://www.tiktok.com/@avioncitizenship?is_from_webapp=1&sender_device=pc' className="social-icon tiktok "><FaTiktok/></a>
+            <a href='https://www.linkedin.com/company/avion-citizenship2020/' className="social-icon linkedin "><FaLinkedinIn/></a>
             </div>
           </div>
         </div>

@@ -13,6 +13,10 @@
 .footer .search .search-btn {
   right: 3% !important;
 }
+.footer li a{
+  color: #fff;
+  text-decoration: none;
+}
 .copyRight {
   position: relative;
   text-align: center;
